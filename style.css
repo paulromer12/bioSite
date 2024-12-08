@@ -35,6 +35,14 @@ header {
     padding: 10px;
 }
 
+.hobby-container {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+}
+
 .card {
     display: flex;
     flex: 1;
