@@ -7,6 +7,7 @@ bioSite project for csd340
 * John Woods
 * Paul Romer
 
+
 # TODO before final submission
 - [x] Increase size of text on the hobbies page
 - [x] Change the text color to stand out a little more
