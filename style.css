@@ -6,6 +6,7 @@
     letter-spacing: 0.02em;
 }
 
+/* Header formatting  */
 header {
     padding: 20px;
 }
@@ -25,6 +26,7 @@ header {
     color: #91ffd4;
 }
 
+/* Body formatting*/
 #container {
     display: flex;
     margin-top: 2%;
@@ -54,10 +56,6 @@ header {
     border-radius: 50px;
 }
 
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
 .home-card-content {
     display: flex;
     flex-direction: column;
@@ -68,6 +66,11 @@ header {
     text-align: center;
 }
 
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Texts and Links */
 a {
     text-decoration: none;
     color: #CCA49D;
@@ -75,16 +78,6 @@ a {
 }
 
 a:hover {
-    color: #91ffd4;
-}
-
-#about a {
-    text-decoration: none;
-    color: #CCA49D;
-    padding: 0;
-}
-
-#about a:hover {
     color: #91ffd4;
 }
 
@@ -101,16 +94,40 @@ h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-h3 {
-    font-size: 18px;
-    font-weight: bold;
-}
-
 p {
     font-size: 16px;
     padding: 5px;
 }
 
+/* About Section */
+.about-card {
+    display: flex;
+    flex: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding-left: 15px;
+    border-radius: 50px;
+}
+
+.about-content {
+    padding: 20px;
+}
+
+.about-content p:first-of-type {
+    text-indent: 2em;
+}
+
+#about a {
+    text-decoration: none;
+    color: #CCA49D;
+    padding: 0;
+}
+
+#about a:hover {
+    color: #91ffd4;
+}
+
+/* Unordered lists not used but leaving because it was in the original plan doc */
 ul {
     list-style-type: circle;
 }
@@ -120,6 +137,7 @@ hr {
     background-color: #CCA49D;
 }
 
+/* Images */
 img {
     border-radius: 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -136,13 +154,6 @@ figcaption {
     text-align: center;
 }
 
-.home-image-container {
-    display: flex;
-    flex: 2;
-    max-width: 50%;
-    justify-content: center;
-}
-
 .photography-image-container,
 .cooking-image-container {
     display: flex;
@@ -151,6 +162,37 @@ figcaption {
     align-items: center;
 }
 
+.home-image-container {
+    display: flex;
+    flex: 2;
+    max-width: 50%;
+    justify-content: center;
+}
+
+/* Photo Gallery on about page */
+.photo-gallery {
+    display: flex;
+    flex: 2;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Footer */
 footer {
     padding: 20px;
     width: 100%;
@@ -187,43 +229,4 @@ footer a:hover {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-}
-
-.photo-gallery {
-    display: flex;
-    flex: 2;
-    padding: 20px;
-    margin-top: 20px;
-    width: 100%;
-}
-
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-.gallery-container img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
-
-.about-card {
-    display: flex;
-    flex: 1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    padding-left: 15px;
-    border-radius: 50px;
-}
-
-.about-content {
-    padding: 20px;
-}
-
-.about-content p:first-of-type {
-    text-indent: 2em;
 }
